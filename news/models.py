@@ -15,6 +15,7 @@ class Article(models.Model):
                             related_name='articles')
     title = models.CharField(max_length=120)
     description = models.CharField(max_length=200)
+    image = models.ImageField()
     body = models.TextField()
     location = models.CharField(max_length=120)
     publication_date = models.DateField()
